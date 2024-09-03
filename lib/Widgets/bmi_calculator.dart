@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'input_field.dart'; // Import untuk InputField
-import 'bmi_card.dart'; // Import untuk BMICard
+import 'input_field.dart';
+import 'bmi_card.dart';
 
 class BMICalculator extends HookWidget {
   const BMICalculator({Key? key}) : super(key: key);
