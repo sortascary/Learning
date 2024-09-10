@@ -48,7 +48,7 @@ class Between extends HookWidget {
               },
               child: const CardBetween(
                 imagePath: 'lib/images/bangundatar.png',
-                text: 'Bangun Datar',
+                text: 'Bangun Datar', // Unique text
               ),
             ),
           ],
