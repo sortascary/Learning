@@ -7,9 +7,9 @@ class CardListView extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final List<Map<String, String>> items = [
-      {'shapename': 'Circle', 'image': 'lib/images/image.png'},
-      {'shapename': 'Rectangle', 'image': 'lib/images/image.png'},
-      {'shapename': 'Triangle', 'image': 'lib/images/image.png'},
+      {'shapename': 'Circle', 'image': 'lib/images/Circle.png'},
+      {'shapename': 'Rectangle', 'image': 'lib/images/Rectangles.png'},
+      {'shapename': 'Triangle', 'image': 'lib/images/Triangle.png'},
     ];
 
     return Scaffold(

@@ -24,7 +24,7 @@ class Between extends HookWidget {
               },
               child: const CardBetween(
                 imagePath: 'lib/images/aritmatika.png',
-                text: 'Arithmetic', // Unique text
+                text: 'Arithmetic',
               ),
             ),
             GestureDetector(
@@ -36,7 +36,7 @@ class Between extends HookWidget {
               },
               child: const CardBetween(
                 imagePath: 'lib/images/BMI.png',
-                text: 'BMI Calculator', // Unique text
+                text: 'BMI Calculator',
               ),
             ),
             GestureDetector(
