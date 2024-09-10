@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:learnhookflutter/Widgets/input_field.dart';
 
 class Arithmetic extends HookWidget {
   @override
@@ -22,21 +23,9 @@ class Arithmetic extends HookWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: <Widget>[
-            TextField(
-              controller: number1Controller,
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: 'First Number',
-              ),
-            ),
+            InputField(controller: number1Controller, label: 'First Number'),
             SizedBox(height: 10),
-            TextField(
-              controller: number2Controller,
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: 'Second Number',
-              ),
-            ),
+            InputField(controller: number2Controller, label: 'Second Number'),
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,

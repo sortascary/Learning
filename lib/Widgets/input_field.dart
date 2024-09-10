@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class InputField extends StatelessWidget {
   final TextEditingController controller;
   final String label;
-  final IconData icon;
+  final IconData? icon;
 
   const InputField({
     Key? key,
     required this.controller,
     required this.label,
-    required this.icon,
+    this.icon,
   }) : super(key: key);
 
   @override
@@ -20,7 +20,7 @@ class InputField extends StatelessWidget {
       decoration: InputDecoration(
         labelText: label,
         border: const OutlineInputBorder(),
-        prefixIcon: Icon(icon),
+        prefixIcon: icon != null?  Icon(icon) : null,
       ),
     );
   }
