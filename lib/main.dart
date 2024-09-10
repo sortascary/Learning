@@ -14,6 +14,5 @@ class MyApp extends HookWidget {
       title: 'BMI',
       home: const Between(),
     );
-    
   }
 }

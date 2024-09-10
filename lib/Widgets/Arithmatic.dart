@@ -16,7 +16,7 @@ class Arithmetic extends HookWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Kalkulator Aritmatika'),
+        title: Text('Arithmatic Calculator'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -26,7 +26,7 @@ class Arithmetic extends HookWidget {
               controller: number1Controller,
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                labelText: 'Angka Pertama',
+                labelText: 'First Number',
               ),
             ),
             SizedBox(height: 10),
@@ -34,7 +34,7 @@ class Arithmetic extends HookWidget {
               controller: number2Controller,
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                labelText: 'Angka Kedua',
+                labelText: 'Second Number',
               ),
             ),
             SizedBox(height: 20),
