@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:learnhookflutter/Widgets/input_field.dart';
 
 class ShapeCalculator {
   double calculateArea(String shape, double num1, {double num2 = 0}) {
@@ -53,30 +54,13 @@ class Caculate extends HookWidget {
             ),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-              child: TextField(
-                controller: num1Controller,
-                keyboardType: TextInputType.number,
-                style: const TextStyle(
-                    color: Color.fromARGB(255, 119, 119, 119), fontSize: 14),
-                decoration: InputDecoration(
-                    labelText: name == "Circle" ? "Radius" : "Width",
-                    border: OutlineInputBorder()),
-              ),
+              child: InputField(controller: num1Controller, label: name == "Circle" ? "Radius" : "Width"),
             ),
             if (name != "Circle")
               Container(
                 margin:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                child: TextField(
-                  controller: num2Controller,
-                  keyboardType: TextInputType.number,
-                  style: const TextStyle(
-                      color: Color.fromARGB(255, 119, 119, 119), fontSize: 14),
-                  decoration: InputDecoration(
-                    labelText: "Height",
-                    border: const OutlineInputBorder(),
-                  ),
-                ),
+                child: InputField(controller: num2Controller, label: 'Height'),
               ),
             ElevatedButton(
               onPressed: () {
